@@ -1,0 +1,16 @@
+const fs = require("fs");
+const process = require("process");
+const customModule = require("./module")
+
+let library;
+let book;
+let command = process.argv[2];
+let bookName = process.argv[3];
+// let bookAuthor = process.argv[4];
+let bookPages = Number(process.argv[5]);
+
+customModule.cruds(command ,library,book,bookName,bookPages)
+
+
+
+
