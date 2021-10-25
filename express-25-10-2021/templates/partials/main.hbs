@@ -1,0 +1,22 @@
+
+ {{>header}}
+<div id ="myDiv" >
+
+{{#if form}}
+<div class="box">
+<h1>{{text}}</h1>
+   <form class="box-form" action="/" method="get">
+      <input type="text" placeholder="city" name="city">
+      <button type="submit" >send</button>
+<p>{{lat}}</p>
+<p>{{lon}}</p>
+</form>
+{{/if}}
+
+{{#if img}}
+<img src="{{src}}">  
+{{/if}}
+ {{>footer}}
+
+
+</div>
