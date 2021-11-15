@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const ar = [];
+      let counter = 0;
+      let i = 1;
+      while (ar.length < 1000) {
+        ar.push(i++);
+        counter++;
+      }
+
+      // console.log(ar);
+
+      const arr1 = ar.map((item) => {
+        return Math.sqrt(item).toFixed();
+      });
+
+      // console.log(arr1);
+
+      const arrOfNum = [2, 3, 4, 6, 7, 8, 1, 12, 22, 33, 45, 47, 55];
+
+      const equalNumbers = (arr) => {
+        arr.filter(item => {
+          return item % 2 === 0;
+        });
+      };
+
+      console.log(equalNumbers(arrOfNum));
+      
+    </script>
+  </body>
+</html>
