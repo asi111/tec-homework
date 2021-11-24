@@ -15,8 +15,8 @@ export default class App extends React.Component {
 
     {/* <Counter num={5}/> */}
     {/* <TowCounter/> */}
-    {/* <LongText string = "hello"/> */}
-    <ShowHide string ="hello"/>
+    <LongText string = "hello"/>
+    {/* <ShowHide string ="hello"/> */}
 
 
     </div>;
